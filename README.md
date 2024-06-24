@@ -56,7 +56,7 @@ Sơ đồ chỉ dưới đây chỉ bao gồm mạch các chân chính, bỏ qua
 - Nếu các giá trị dưới ngưỡng kích hoạt, cần phải set RGB về 0 nhằm tắt đèn, tắt còi thông qua hàm noTone(ALARM_PIN);
 - Ngoài ra trong vòng loop của main chứa hàm Delay(), sleep bao nhiêu giây nhằm giảm tải cho mạch, sẽ ảnh hưởng đến độ nhạy của cảm biến.
 
-1. **Cảm biến khí MQ3**:
+1. **Cảm biến khí MQ6**:
    - Cảm biến này được sử dụng để đo nồng độ khí LPG. Giá trị điện áp đọc được từ chân analog của ESP32 được chuyển đổi thành mV và từ đó tính toán ra điện trở của cảm biến (Rs). Tỷ lệ Rs/Ro (với Ro là điện trở trong không khí sạch) được sử dụng để tính nồng độ LPG theo ppm.
 
 2. **Hiển thị OLED**:
