@@ -29,11 +29,14 @@
   - Dừng hiển thị các màu trên LED RGB và ngừng báo động âm thanh khi nồng độ LPG không còn quá cao.
 
 # B. Hướng Dẫn Sử Dụng
-
+- Thử nghiệm bằng cách đưa khí gas vào cảm biến MQ6
+![anh1](images/anh1.jpg)
 # C. Danh sách linh kiện
-- Module Cảm Biến Khí Rượu MQ3
-- ESP32
+- Module Cảm Biến Khí Gas MQ6
+- ESP32s
 - Màn hình Oled 0.96 inch SPI
+- Còi
+- Đèn LED RGB
 - Bo mạch
 - Dây dẫn
 
