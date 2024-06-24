@@ -31,6 +31,11 @@
 # B. Hướng Dẫn Sử Dụng
 - Thử nghiệm bằng cách đưa khí gas vào cảm biến MQ6, thông tin sẽ được hiển thị trên màn hình OLed, nếu chỉ số ppm vượt ngưỡng, còi và đèn LED cảnh báo sẽ hoạt động.
 ![anh1](images/anh1.jpg)
+
+Để chạy chương trình vào mạch, thực hiện kết nối mạch với máy tính qua cổng USB trên ESP32.
+
+Clone git về, mở file source bằng Arduino IDE, thực hiện tìm cổng kết nối và tải mã lên mạch.
+
 # C. Danh sách linh kiện
 - Module Cảm Biến Khí Gas MQ6
 - ESP32s
