@@ -29,7 +29,7 @@
   - Dừng hiển thị các màu trên LED RGB và ngừng báo động âm thanh khi nồng độ LPG không còn quá cao.
 
 # B. Hướng Dẫn Sử Dụng
-- Thử nghiệm bằng cách đưa khí gas vào cảm biến MQ6
+- Thử nghiệm bằng cách đưa khí gas vào cảm biến MQ6, thông tin sẽ được hiển thị trên màn hình OLed, nếu chỉ số ppm vượt ngưỡng, còi và đèn LED cảnh báo sẽ hoạt động.
 ![anh1](images/anh1.jpg)
 # C. Danh sách linh kiện
 - Module Cảm Biến Khí Gas MQ6
@@ -41,8 +41,15 @@
 - Dây dẫn
 
 # D. Sơ đồ nguyên lý
-
+Sơ đồ chỉ dưới đây chỉ bao gồm mạch các chân chính, bỏ qua GND và VCC.
+![Sodo](images/Sodo.png)
 # E. Thiết kế phần mềm - Software Concept
+- Sử dụng cảm biến MQ6 để nhận biết khí Gas tại cổng A0, giá trị truyền về là là mVolt, đo khoảng 30 lần sau đó tính toán giá trị trung bình, kết hợp với các hàm tính toán Rs và R0 rồi tính ra nồng độ LPG theo ppm.
+- Khi giá trị đạt ngưỡng 1000 (do mình cài đặt trong code), thì sẽ thực hiện các hàm hiển thị LED và Còi kêu.
+- LED RGB được hiển thị thông qua cổng  R, G, B, hàm analogWrite sẽ thực hiện set giá trị tại các cổng này, đèn hiển thị theo giá trị đó.
+- Còi được kích hoạt thông qua cổng + của nó (chỉ có 2 cổng + và -), thông qua hàm tone(ALARM_PIN, toneVal). 
+- Nếu các giá trị dưới ngưỡng kích hoạt, cần phải set RGB về 0 nhằm tắt đèn, tắt còi thông qua hàm noTone(ALARM_PIN);
+- Ngoài ra trong vòng loop của main chứa hàm Delay(), sleep bao nhiêu giây nhằm giảm tải cho mạch, sẽ ảnh hưởng đến độ nhạy của cảm biến.
 
 1. **Cảm biến khí MQ3**:
    - Cảm biến này được sử dụng để đo nồng độ khí LPG. Giá trị điện áp đọc được từ chân analog của ESP32 được chuyển đổi thành mV và từ đó tính toán ra điện trở của cảm biến (Rs). Tỷ lệ Rs/Ro (với Ro là điện trở trong không khí sạch) được sử dụng để tính nồng độ LPG theo ppm.
