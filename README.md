@@ -37,11 +37,11 @@
 Clone git về, mở file source bằng Arduino IDE, thực hiện tìm cổng kết nối và tải mã lên mạch.
 
 # C. Danh sách linh kiện
-- Module Cảm Biến Khí Gas MQ6
-- ESP32s
-- Màn hình Oled 0.96 inch SPI
-- Còi
-- Đèn LED RGB
+- Module Cảm Biến Khí Gas MQ6 (https://anasa.vn/cam-bien-khi-gas-mq6)
+- ESP32s (https://shopee.vn/B%E1%BA%A3ng-M%E1%BA%A1ch-Ph%C3%A1t-Tri%E1%BB%83n-Esp32-Wifi-Bluetooth-2-Trong-1-Esp-32-Esp-32S-i.148048328.4174123835?sp_atk=559ca1e9-bfcc-4bc8-bf9f-9e80e08f2f31&xptdk=559ca1e9-bfcc-4bc8-bf9f-9e80e08f2f31&is_from_login=true)
+- Màn hình Oled 0.96 inch SPI (https://shopee.vn/M%C3%B4-%C4%90un-M%C3%A0n-H%C3%ACnh-OLED-0.96-SPI-IIC-I2C-Tr%E1%BA%AFng-Xanh-D%C6%B0%C6%A1ng-V%C3%A0ng-Xanh-D%C6%B0%C6%A1ng-0.96-inch-OLED-128X64-OLED-Cho-ARDUINO-i.812409307.18922230144?sp_atk=cda43fca-a90a-45a8-adc2-5de6d75dce6e&xptdk=cda43fca-a90a-45a8-adc2-5de6d75dce6e)
+- Còi (https://shopee.vn/Module-c%C3%B2i-b%C3%A1o-c%C3%B2i-ch%C3%ADp-1-5-15V-i.301053603.23238436397?sp_atk=6d7a8258-1e4b-4213-8455-019c00c940e2&xptdk=6d7a8258-1e4b-4213-8455-019c00c940e2)
+- Đèn LED RGB (https://shopee.vn/Module-Led-SMD-RGB-KY-009-i.60387211.4051036895?sp_atk=1076cda3-cc53-4cb7-a9c1-e42119fc9cb5&xptdk=1076cda3-cc53-4cb7-a9c1-e42119fc9cb5)
 - Bo mạch
 - Dây dẫn
 
